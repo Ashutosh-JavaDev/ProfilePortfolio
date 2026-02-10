@@ -40,7 +40,7 @@ const Education: React.FC = () => {
               <div className="lg:w-1/2">
                 <div className="p-10 rounded-[2.5rem] bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
                   <div className="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-primary-100 dark:bg-primary-900/30 text-primary-600 dark:text-primary-400 text-sm font-bold mb-6">
-                    <GraduationCap size={16} />
+                    < GraduationCap size={16} />
                     {edu.degree}
                   </div>
                   <div className="flex items-center gap-2 mb-6">

@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Coffee, Database, Globe, Monitor, Code2, Layers, Cpu, Server } from 'lucide-react';
+import { Coffee, Database, Globe, Monitor, Code2 } from 'lucide-react';
 import { SKILLS } from '../constants';
 
 const iconMap = {

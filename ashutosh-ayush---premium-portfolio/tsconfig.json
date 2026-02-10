@@ -5,6 +5,7 @@
     "module": "ESNext",
     "moduleResolution": "Bundler",
     "jsx": "react-jsx",
+    "jsxImportSource": "react",
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "strict": true,
     "skipLibCheck": true,
@@ -17,9 +18,12 @@
     "baseUrl": ".",
     "paths": {
       "react": ["https://esm.sh/react@19.2.4?types"],
+      "react/": ["https://esm.sh/react@19.2.4/"],
+      "react/jsx-runtime": ["https://esm.sh/react@19.2.4/jsx-runtime?types"],
+      "react/jsx-dev-runtime": ["https://esm.sh/react@19.2.4/jsx-dev-runtime?types"],
       "react-dom": ["https://esm.sh/react-dom@19.2.4?types"],
       "react-dom/*": ["https://esm.sh/react-dom@19.2.4/*?types"],
-      "lucide-react": ["https://esm.sh/lucide-react@0.475.0?types"]
+      "lucide-react": ["https://esm.sh/lucide-react@0.563.0?types"]
     }
   },
   "include": ["**/*.ts", "**/*.tsx"]
