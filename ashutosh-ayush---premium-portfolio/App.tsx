@@ -1,145 +1,151 @@
 
-import React, { useState, useEffect } from 'react';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import Skills from './components/Skills';
-import Projects from './components/Projects';
-import Education from './components/Education';
-import Contact from './components/Contact';
-import { CERTIFICATES, BLOG_POSTS } from './constants';
-import { ExternalLink, Eye, Clock } from 'lucide-react';
+import { Project, Skill, Certificate, Education, BlogPost } from './types';
 
-const App: React.FC = () => {
-  const [theme, setTheme] = useState<'light' | 'dark'>('dark');
+export const PROJECTS: Project[] = [
+  {
+    id: 'notes',
+    title: 'Notes Application',
+    description: 'A sophisticated productivity tool for seamless daily task management and note-taking with local persistence.',
+    tags: ['HTML5', 'CSS3', 'JavaScript'],
+    image: 'https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg?auto=compress&cs=tinysrgb&w=800',
+    link: 'Projects/Notes.html',
+    gridSpan: 'md:col-span-2 md:row-span-2'
+  },
+  {
+    id: 'tictactoe',
+    title: 'Tic Tac Toe Pro',
+    description: 'Modern redesign of the classic game with high-fidelity UI and minimax-ready logic.',
+    tags: ['Modern CSS', 'ES6+', 'Game Logic'],
+    image: 'https://images.pexels.com/photos/163064/play-stone-network-networked-interactive-163064.jpeg?auto=compress&cs=tinysrgb&w=800',
+    link: 'Projects/game.html',
+    gridSpan: 'md:col-span-2'
+  },
+  {
+    id: 'swimming',
+    title: 'Aquatic Center Web Portal',
+    description: 'A responsive high-conversion landing page for leisure facilities with focus on UX/UI.',
+    tags: ['UI/UX', 'Mobile First', 'Flexbox'],
+    image: 'https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800',
+    link: 'Projects/SwimmingPool.html',
+    gridSpan: 'md:col-span-1'
+  },
+  {
+    id: 'pizza',
+    title: 'Pizza Mania',
+    description: 'Full-service digital ordering system focused on Tailwind CSS optimization and performance.',
+    tags: ['Tailwind', 'Responsive', 'Dynamic UI'],
+    image: 'https://images.pexels.com/photos/905847/pexels-photo-905847.jpeg?auto=compress&cs=tinysrgb&w=800',
+    link: 'https://github.com/Ashutosh-JavaDev/PizzaMania/tree/main/Project/src',
+    gridSpan: 'md:col-span-1'
+  },
+  {
+    id: 'techhack',
+    title: 'Tech Hack Community',
+    description: 'Dynamic platform for sharing developer shortcuts and architectural patterns.',
+    tags: ['Architecture', 'Tech News', 'Community'],
+    image: 'https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=800',
+    link: 'src/tech.html',
+    gridSpan: 'md:col-span-2'
+  },
+  {
+    id: 'webbrilliant',
+    title: 'Web Brilliant',
+    description: 'Enterprise-grade publicly hosted web portal featuring SEO optimization and fast delivery.',
+    tags: ['SEO', 'Performance', 'Enterprise'],
+    image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800',
+    link: 'https://www.webbilliant.in/',
+    gridSpan: 'md:col-span-2'
+  }
+];
 
-  useEffect(() => {
-    if (theme === 'dark') {
-      document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-    }
-  }, [theme]);
+export const SKILLS: Skill[] = [
+  {
+    name: 'Core Java Architecture',
+    category: 'core',
+    icon: 'Coffee',
+    items: ['Java Fundamentals', 'OOP Principles', 'Collections Framework', 'Multithreading', 'SpringBoot']
+  },
+  {
+    name: 'Data Integrity',
+    category: 'database',
+    icon: 'Database',
+    items: ['MySQL Design', 'SQL Optimization', 'Joins & Views', 'ER Modeling', 'Performance Tuning']
+  },
+  {
+    name: 'Web Engineering',
+    category: 'web',
+    icon: 'Globe',
+    items: ['HTML5/CSS3', 'React Ecosystem', 'Modern JavaScript', 'Responsive Design', 'RESTful APIs']
+  },
+  {
+    name: 'System Software',
+    category: 'desktop',
+    icon: 'Monitor',
+    items: ['Java Swing', 'GUI Development', 'Event Handling', 'Desktop Architecture', 'Local Persistence']
+  }
+];
 
-  const toggleTheme = () => setTheme(prev => prev === 'light' ? 'dark' : 'light');
+export const CERTIFICATES: Certificate[] = [
+  {
+    title: 'Software Engineer',
+    issuer: 'J.P. Morgan Chase & Co.',
+    date: '2025',
+    description: 'Developed and enhanced the Midas Core System. Implemented real-time transaction handling using Kafka and Spring Boot.',
+    image: 'https://images.pexels.com/photos/8830672/pexels-photo-8830672.jpeg?auto=compress&cs=tinysrgb&w=400',
+    link: 'https://www.linkedin.com/posts/ashutosh-ayush-128ba8283_jpmorgan-internship-activity-7390131339661930496-aNsa'
+  },
+  {
+    title: 'Cybersecurity Analyst',
+    issuer: 'Tata Consultancy Services',
+    date: '2025',
+    description: 'Comprehensive, hands-on internship focused on modern cybersecurity principles and backend security protocols.',
+    image: 'https://images.pexels.com/photos/4977450/pexels-photo-4977450.jpeg?auto=compress&cs=tinysrgb&w=400',
+    link: 'https://www.linkedin.com/posts/ashutosh-ayush-128ba8283_certificate-of-completion-activity-7353112732717469696-vqFg'
+  },
+  {
+    title: 'Java Developer Intern',
+    issuer: 'Elite Tech Intern',
+    date: '2025',
+    description: 'Software development focus on building, testing, and deploying robust Java-based enterprise applications.',
+    image: 'https://images.pexels.com/photos/3584994/pexels-photo-3584994.jpeg?auto=compress&cs=tinysrgb&w=400',
+    link: 'https://drive.google.com/file/d/1ZHOE5lunAAYa1ylm_ZM4WuFNp-FCo5Zt/view'
+  }
+];
 
-  return (
-    <div className="min-h-screen bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-100 transition-colors duration-300">
-      <Navbar theme={theme} toggleTheme={toggleTheme} />
-      
-      <main>
-        <Hero />
-        
-        <Skills />
+export const EDUCATION: Education[] = [
+  {
+    degree: 'Master of Computer Applications (MCA)',
+    institution: 'LNCT – Lakshmi Narain College of Technology',
+    period: '2024 – 2026',
+    grade: 'CGPA: 7.8',
+    description: 'Advanced computer science specialization in software engineering and cloud systems.',
+    image: 'https://lnct.ac.in/wp-content/uploads/2021/04/lnct-slider2-1024x456.jpg'
+  },
+  {
+    degree: 'Bachelor of Science in IT',
+    institution: 'Marwari College',
+    period: '2021 – 2024',
+    grade: '72%',
+    description: 'Foundational degree in programming, database management, and operating systems.',
+    image: 'https://www.marwaricollegebhagalpur.ac.in/images/slides-img/slides-img11.jpg'
+  }
+];
 
-        {/* Certificates Section */}
-        <section id="certificates" className="py-24 bg-slate-50 dark:bg-slate-900/30">
-          <div className="container mx-auto px-6">
-            <div className="text-center mb-20">
-              <h2 className="text-sm font-bold text-primary-600 dark:text-primary-400 uppercase tracking-[0.2em] mb-4">Credentials</h2>
-              <h3 className="text-4xl lg:text-6xl font-heading font-extrabold mb-6">Expert Accreditations.</h3>
-            </div>
-
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-              {CERTIFICATES.map((cert) => (
-                <div key={cert.title} className="group p-2 bg-white dark:bg-slate-800 rounded-[2.5rem] border border-slate-200 dark:border-slate-700 hover:border-primary-500/50 transition-all duration-500 hover:shadow-2xl">
-                  <div className="relative h-60 overflow-hidden rounded-[2rem] mb-6">
-                    <img src={cert.image} alt={cert.title} className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-105" />
-                    <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-all"></div>
-                  </div>
-                  <div className="px-6 pb-6">
-                    <div className="flex justify-between items-start mb-4">
-                      <div>
-                        <h4 className="text-xl font-bold font-heading mb-1">{cert.title}</h4>
-                        <div className="text-primary-600 dark:text-primary-400 text-sm font-bold uppercase tracking-wider">{cert.issuer}</div>
-                      </div>
-                      <div className="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-full text-xs font-bold">{cert.date}</div>
-                    </div>
-                    <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6 line-clamp-3">{cert.description}</p>
-                    <a 
-                      href={cert.link} 
-                      target="_blank" 
-                      className="inline-flex items-center gap-2 text-sm font-bold text-slate-900 dark:text-white hover:text-primary-600 transition-colors group/link"
-                    >
-                      Verify Credential <ExternalLink size={16} className="group-hover/link:translate-x-1 transition-transform" />
-                    </a>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <Projects />
-
-        <Education />
-
-        {/* Blog/Reasoning Section */}
-        <section className="py-24 bg-slate-50 dark:bg-slate-950">
-          <div className="container mx-auto px-6">
-            <div className="flex flex-col lg:flex-row justify-between items-end mb-16 gap-6">
-              <div className="max-w-xl">
-                <h2 className="text-sm font-bold text-primary-600 dark:text-primary-400 uppercase tracking-[0.2em] mb-4">Insights</h2>
-                <h3 className="text-4xl lg:text-6xl font-heading font-extrabold mb-4">Architectural Logic.</h3>
-                <p className="text-slate-600 dark:text-slate-400 text-lg">Deep dives into engineering choices and philosophical approaches to modern development.</p>
-              </div>
-              <button className="px-8 py-4 bg-slate-900 dark:bg-white text-white dark:text-slate-900 rounded-2xl font-bold hover:bg-slate-800 dark:hover:bg-slate-100 transition-all">Read Journal</button>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-8">
-              {BLOG_POSTS.map(post => (
-                <div key={post.title} className="p-10 rounded-[3rem] bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:shadow-xl transition-all group">
-                  <div className="flex items-center gap-4 mb-6">
-                    <span className="px-4 py-1 bg-primary-100 dark:bg-primary-900/30 text-primary-600 dark:text-primary-400 rounded-full text-xs font-bold uppercase tracking-widest">{post.category}</span>
-                    <div className="flex items-center gap-1 text-slate-400 text-xs font-bold">
-                      <Clock size={14} /> {post.readTime}
-                    </div>
-                    <div className="flex items-center gap-1 text-slate-400 text-xs font-bold">
-                      <Eye size={14} /> {post.views}
-                    </div>
-                  </div>
-                  <h4 className="text-2xl font-heading font-bold mb-4 group-hover:text-primary-500 transition-colors cursor-pointer">{post.title}</h4>
-                  <p className="text-slate-600 dark:text-slate-400 leading-relaxed mb-8">{post.excerpt}</p>
-                  <a href={post.link} className="flex items-center gap-2 font-bold text-sm hover:translate-x-1 transition-transform">
-                    Explore Article <ArrowRight size={16} />
-                  </a>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <Contact />
-      </main>
-
-      <footer className="py-12 border-t border-slate-200 dark:border-slate-800">
-        <div className="container mx-auto px-6 text-center">
-          <div className="flex justify-center items-center gap-3 mb-8">
-            <div className="w-10 h-10 bg-primary-600 rounded-lg flex items-center justify-center text-white font-bold text-xl">AA</div>
-            <span className="font-heading font-bold text-xl tracking-tight">AshutoshAyush</span>
-          </div>
-          <p className="text-slate-500 text-sm">© 2026 Portfolio — Built with precision using React, TypeScript & Tailwind.</p>
-        </div>
-      </footer>
-    </div>
-  );
-};
-
-// Helper internal component for Icons
-const ArrowRight = ({ size, className }: { size: number, className?: string }) => (
-  <svg 
-    xmlns="http://www.w3.org/2000/svg" 
-    width={size} 
-    height={size} 
-    viewBox="0 0 24 24" 
-    fill="none" 
-    stroke="currentColor" 
-    strokeWidth="2" 
-    strokeLinecap="round" 
-    strokeLinejoin="round" 
-    className={className}
-  >
-    <path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>
-  </svg>
-);
-
-export default App;
+export const BLOG_POSTS: BlogPost[] = [
+  {
+    title: 'Why I choose Java as my first Programming Language?',
+    excerpt: 'Java stands out as a programming language that combines simplicity, versatility, and reliability. It became my cornerstone in development.',
+    category: 'Architecture',
+    readTime: '5 min',
+    link: 'Projects/ReasonforJava.html',
+    views: '2.1K'
+  },
+  {
+    title: 'Mastering Data Structures & Algorithms',
+    excerpt: 'DSA is not just about solving problems; it is about solving them in the most logical, resource-efficient way possible.',
+    category: 'Computer Science',
+    readTime: '7 min',
+    link: 'Projects/ChooseDSA.html',
+    views: '1.9K'
+  }
+];
