@@ -1,4 +1,5 @@
 
+/* Removed problematic remote type reference directives to fix resolution errors */
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
