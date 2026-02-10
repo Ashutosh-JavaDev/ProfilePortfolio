@@ -1,5 +1,5 @@
-
-import { Project, Skill, Certificate, Education, BlogPost } from './types';
+// Fixed error: Removed invalid type reference directive for react
+import { Project, Skill, Certificate, Education, BlogPost } from '../types';
 
 export const PROJECTS: Project[] = [
   {

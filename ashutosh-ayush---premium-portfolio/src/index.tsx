@@ -1,5 +1,4 @@
-
-/* Removed problematic remote type reference directives to fix resolution errors */
+// Fixed error: Removed invalid type reference directives for react and react-dom
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
