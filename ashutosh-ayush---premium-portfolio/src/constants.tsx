@@ -8,7 +8,7 @@ export const PROJECTS: Project[] = [
     description: 'A sophisticated productivity tool for seamless daily task management and note-taking with local persistence.',
     tags: ['HTML5', 'CSS3', 'JavaScript'],
     image: 'https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg?auto=compress&cs=tinysrgb&w=800',
-    link: 'Projects/Notes.html',
+    link: 'public/Notes.html',
     gridSpan: 'md:col-span-2 md:row-span-2'
   },
   {

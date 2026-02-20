@@ -74,7 +74,7 @@ const Hero: React.FC = () => {
               <div className="absolute inset-0 bg-gradient-to-tr from-primary-500 to-violet-600 rounded-[2rem] -rotate-6 transition-transform group-hover:rotate-0"></div>
               <div className="absolute inset-2 bg-white dark:bg-slate-900 rounded-[1.8rem] overflow-hidden">
                 <img 
-                  src="/public/CourtPant.jpg" 
+                  src="/CourtPant.jpg" 
                   alt="Ashutosh Ayush" 
                   className="w-full h-full object-cover filter grayscale hover:grayscale-0 transition-all duration-500"
                 />
