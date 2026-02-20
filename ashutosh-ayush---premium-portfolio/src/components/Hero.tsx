@@ -74,7 +74,7 @@ const Hero: React.FC = () => {
               <div className="absolute inset-0 bg-gradient-to-tr from-primary-500 to-violet-600 rounded-[2rem] -rotate-6 transition-transform group-hover:rotate-0"></div>
               <div className="absolute inset-2 bg-white dark:bg-slate-900 rounded-[1.8rem] overflow-hidden">
                 <img 
-                  src="https://picsum.photos/seed/ashutosh/800/800" 
+                  src="/public/CourtPant.jpg" 
                   alt="Ashutosh Ayush" 
                   className="w-full h-full object-cover filter grayscale hover:grayscale-0 transition-all duration-500"
                 />
@@ -88,7 +88,7 @@ const Hero: React.FC = () => {
                   </div>
                   <div className="pr-4">
                     <div className="text-xs font-bold uppercase opacity-50 tracking-wider">Resume</div>
-                    <div className="text-sm font-bold">CV.pdf</div>
+                    <div className="text-sm font-bold"><a href="public/AshutoshBackendResume.pdf">CV.pdf</a></div>
                   </div>
                 </div>
               </div>
