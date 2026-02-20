@@ -8,7 +8,7 @@ export const PROJECTS: Project[] = [
     description: 'A sophisticated productivity tool for seamless daily task management and note-taking with local persistence.',
     tags: ['HTML5', 'CSS3', 'JavaScript'],
     image: 'https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg?auto=compress&cs=tinysrgb&w=800',
-    link: 'public/Notes.html',
+    link: '/Notes.html',
     gridSpan: 'md:col-span-2 md:row-span-2'
   },
   {
@@ -17,7 +17,7 @@ export const PROJECTS: Project[] = [
     description: 'Modern redesign of the classic game with high-fidelity UI and minimax-ready logic.',
     tags: ['Modern CSS', 'ES6+', 'Game Logic'],
     image: 'https://images.pexels.com/photos/163064/play-stone-network-networked-interactive-163064.jpeg?auto=compress&cs=tinysrgb&w=800',
-    link: 'Projects/game.html',
+    link: '/game.html',
     gridSpan: 'md:col-span-2'
   },
   {
@@ -26,7 +26,7 @@ export const PROJECTS: Project[] = [
     description: 'A responsive high-conversion landing page for leisure facilities with focus on UX/UI.',
     tags: ['UI/UX', 'Mobile First', 'Flexbox'],
     image: 'https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800',
-    link: 'Projects/SwimmingPool.html',
+    link: '/SwimmingPool.html',
     gridSpan: 'md:col-span-1'
   },
   {
@@ -44,7 +44,7 @@ export const PROJECTS: Project[] = [
     description: 'Dynamic platform for sharing developer shortcuts and architectural patterns.',
     tags: ['Architecture', 'Tech News', 'Community'],
     image: 'https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=800',
-    link: 'src/tech.html',
+    link: '/tech.html',
     gridSpan: 'md:col-span-2'
   },
   {
