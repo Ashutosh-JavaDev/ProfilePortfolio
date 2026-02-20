@@ -137,7 +137,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt: 'Java stands out as a programming language that combines simplicity, versatility, and reliability. It became my cornerstone in development.',
     category: 'Architecture',
     readTime: '5 min',
-    link: 'Projects/ReasonforJava.html',
+    link: '/ReasonforJava.html',
     views: '2.1K'
   },
   {
@@ -145,7 +145,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt: 'DSA is not just about solving problems; it is about solving them in the most logical, resource-efficient way possible.',
     category: 'Computer Science',
     readTime: '7 min',
-    link: 'Projects/ChooseDSA.html',
+    link: '/ChooseDSA.html',
     views: '1.9K'
   }
 ];
