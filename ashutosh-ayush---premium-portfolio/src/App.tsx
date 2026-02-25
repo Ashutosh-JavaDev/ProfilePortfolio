@@ -170,7 +170,7 @@ const App: React.FC = () => {
             </div>
             <span className="font-heading font-bold text-xl tracking-tight">AshutoshAyush</span>
           </div>
-          <p className="text-slate-500 text-sm">© 2026 Portfolio — Built with precision using React, TypeScript & Tailwind.</p>
+          <p className="text-slate-500 text-sm">© 2026 Portfolio — Built with precision using BootStrap & Tailwind.</p>
         </div>
       </footer>
     </div>
