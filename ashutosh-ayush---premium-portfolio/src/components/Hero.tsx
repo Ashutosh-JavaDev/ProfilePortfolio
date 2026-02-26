@@ -84,12 +84,12 @@ const Hero: React.FC = () => {
               <div className="absolute -bottom-6 -right-6 bg-white dark:bg-slate-800 p-4 rounded-2xl shadow-2xl border border-slate-200 dark:border-slate-700 animate-bounce">
                 <div className="flex items-center gap-3">
                   <div className="p-2 bg-primary-100 dark:bg-primary-900/30 text-primary-600 dark:text-primary-400 rounded-xl">
-                    <a href="public/AshutoshBackendResume.pdf"><Download size={24} /></a>
+                    <a href="/AshutoshBackendResume.pdf"><Download size={24} /></a>
                     
                   </div>
                   <div className="pr-4">
                     <div className="text-xs font-bold uppercase opacity-50 tracking-wider">Resume</div>
-                    <div className="text-sm font-bold"><a href="public/AshutoshBackendResume.pdf">CV.pdf</a></div>
+                    <div className="text-sm font-bold"><a href="/AshutoshBackendResume.pdf">CV.pdf</a></div>
                   </div>
                 </div>
               </div>
