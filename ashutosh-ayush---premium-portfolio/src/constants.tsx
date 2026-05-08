@@ -6,7 +6,7 @@ export const PROJECTS: Project[] = [
     id: 'notes',
     title: 'Cycle Care - Period Calcultor',
     description: 'Cycle Care is a smart and user-friendly menstrual health tracking application designed to help users monitor periods, ovulation, symptoms, mood, and overall wellness in one place.',
-    tags: ['HTML5', 'CSS3', 'JavaScript'],
+    tags: ['HTML5', 'CSS3', 'ReactJS'],
     image: 'https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg?auto=compress&cs=tinysrgb&w=800',
     link: 'cyclecare-beta.vercel.app',
     gridSpan: 'md:col-span-2 md:row-span-2'
