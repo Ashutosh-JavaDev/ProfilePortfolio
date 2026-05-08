@@ -4,11 +4,11 @@ import { Project, Skill, Certificate, Education, BlogPost } from '../types';
 export const PROJECTS: Project[] = [
   {
     id: 'notes',
-    title: 'Notes Application',
-    description: 'A sophisticated productivity tool for seamless daily task management and note-taking with local persistence.',
+    title: 'Cycle Care - Period Calcultor',
+    description: 'Cycle Care is a smart and user-friendly menstrual health tracking application designed to help users monitor periods, ovulation, symptoms, mood, and overall wellness in one place.',
     tags: ['HTML5', 'CSS3', 'JavaScript'],
     image: 'https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg?auto=compress&cs=tinysrgb&w=800',
-    link: '/Notes.html',
+    link: 'cyclecare-beta.vercel.app',
     gridSpan: 'md:col-span-2 md:row-span-2'
   },
   {
