@@ -8,16 +8,16 @@ export const PROJECTS: Project[] = [
     description: 'Cycle Care is a smart and user-friendly menstrual health tracking application designed to help users monitor periods, ovulation, symptoms, mood, and overall wellness in one place.',
     tags: ['HTML5', 'CSS3', 'ReactJS'],
     image: 'https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg?auto=compress&cs=tinysrgb&w=800',
-    link: 'cyclecare-beta.vercel.app',
+    link: 'https://cyclecare-beta.vercel.app',
     gridSpan: 'md:col-span-2 md:row-span-2'
   },
   {
     id: 'tictactoe',
-    title: 'Tic Tac Toe Pro',
-    description: 'Modern redesign of the classic game with high-fidelity UI and minimax-ready logic.',
-    tags: ['Modern CSS', 'ES6+', 'Game Logic'],
+    title: 'Tiffin Service',
+    description: 'Fresh Tiffin Service is a convenient and affordable food delivery solution that provides healthy, hygienic, and home-style meals to students, working professionals, and families.',
+    tags: ['Modern CSS', 'ES6+', 'ReactJS'],
     image: 'https://images.pexels.com/photos/163064/play-stone-network-networked-interactive-163064.jpeg?auto=compress&cs=tinysrgb&w=800',
-    link: '/game.html',
+    link: 'https://tiffin-service-olive.vercel.app/',
     gridSpan: 'md:col-span-2'
   },
   {
