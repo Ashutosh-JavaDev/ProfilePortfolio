@@ -69,9 +69,9 @@ const App: React.FC = () => {
                     <img
                       src={cert.image}
                       alt={cert.title}
-                      className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-105"
+                      className="w-full h-full object-cover transition-all duration-500 group-hover:scale-105 group-hover:brightness-110"
                     />
-                    <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-all"></div>
+                    <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-all duration-500"></div>
                   </div>
                   <div className="px-6 pb-6">
                     <div className="flex justify-between items-start mb-4">

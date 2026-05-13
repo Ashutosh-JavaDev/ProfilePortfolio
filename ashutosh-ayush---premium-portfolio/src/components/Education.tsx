@@ -23,7 +23,7 @@ const Education: React.FC = () => {
                   <img 
                     src={edu.image} 
                     alt={edu.institution} 
-                    className="w-full h-[350px] object-cover group-hover:scale-105 transition-transform duration-700 filter grayscale group-hover:grayscale-0"
+                    className="w-full h-[350px] object-cover transition-all duration-700 group-hover:scale-105 group-hover:brightness-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent flex items-end p-8">
                     <div>

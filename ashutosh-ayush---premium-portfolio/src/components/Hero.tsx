@@ -76,7 +76,7 @@ const Hero: React.FC = () => {
                 <img 
                   src="/CourtPant.jpg" 
                   alt="Ashutosh Ayush" 
-                  className="w-full h-full object-cover filter grayscale hover:grayscale-0 transition-all duration-500"
+                  className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                 />
               </div>
               
