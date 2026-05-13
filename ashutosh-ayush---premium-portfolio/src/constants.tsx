@@ -3,58 +3,76 @@ import { Project, Skill, Certificate, Education, BlogPost } from '../types';
 
 export const PROJECTS: Project[] = [
   {
-    id: 'notes',
-    title: 'Cycle Care - Period Calcultor',
-    description: 'Cycle Care is a smart and user-friendly menstrual health tracking application designed to help users monitor periods, ovulation, symptoms, mood, and overall wellness in one place.',
-    tags: ['HTML5', 'CSS3', 'ReactJS'],
-    image: 'https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg?auto=compress&cs=tinysrgb&w=800',
-    link: 'https://cyclecare-beta.vercel.app',
-    gridSpan: 'md:col-span-2 md:row-span-2'
+    id: 'cyclecare',
+    title: 'Cycle Care',
+    description: 'A smart menstrual health tracking app helping users monitor periods, ovulation, symptoms, mood, and overall wellness — all in one elegant, user-friendly interface.',
+    tags: ['ReactJS', 'HTML5', 'CSS3'],
+    image: 'https://images.pexels.com/photos/4021775/pexels-photo-4021775.jpeg?auto=compress&cs=tinysrgb&w=800',
+    link: 'https://cyclecare-beta.vercel.app/',
+    liveLink: 'https://cyclecare-beta.vercel.app/',
+    github: 'https://github.com/Ashutosh-JavaDev',
+    category: 'Web App',
+    featured: true,
+    status: 'Live'
   },
   {
-    id: 'tictactoe',
+    id: 'tiffin',
     title: 'Tiffin Service',
-    description: 'Fresh Tiffin Service is a convenient and affordable food delivery solution that provides healthy, hygienic, and home-style meals to students, working professionals, and families.',
-    tags: ['Modern CSS', 'ES6+', 'ReactJS'],
-    image: 'https://images.pexels.com/photos/163064/play-stone-network-networked-interactive-163064.jpeg?auto=compress&cs=tinysrgb&w=800',
+    description: 'A full-featured food delivery and tiffin subscription platform with seamless menu browsing, order management, and responsive UI designed for home-cooked meal services.',
+    tags: ['ReactJS', 'Tailwind', 'Node.js'],
+    image: 'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=800',
     link: 'https://tiffin-service-olive.vercel.app/',
-    gridSpan: 'md:col-span-2'
-  },
-  {
-    id: 'swimming',
-    title: 'Aquatic Center Web Portal',
-    description: 'A responsive high-conversion landing page for leisure facilities with focus on UX/UI.',
-    tags: ['UI/UX', 'Mobile First', 'Flexbox'],
-    image: 'https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800',
-    link: '/SwimmingPool.html',
-    gridSpan: 'md:col-span-1'
+    liveLink: 'https://tiffin-service-olive.vercel.app/',
+    github: 'https://github.com/Ashutosh-JavaDev',
+    category: 'Web App',
+    featured: true,
+    status: 'Live'
   },
   {
     id: 'pizza',
     title: 'Pizza Mania',
-    description: 'Full-service digital ordering system focused on Tailwind CSS optimization and performance.',
+    description: 'Full-service digital ordering system with a dynamic menu, cart, and checkout flow — focused on Tailwind CSS optimization and peak performance.',
     tags: ['Tailwind', 'Responsive', 'Dynamic UI'],
     image: 'https://images.pexels.com/photos/905847/pexels-photo-905847.jpeg?auto=compress&cs=tinysrgb&w=800',
     link: 'https://github.com/Ashutosh-JavaDev/PizzaMania/tree/main/Project/src',
-    gridSpan: 'md:col-span-1'
-  },
-  {
-    id: 'techhack',
-    title: 'Tech Hack Community',
-    description: 'Dynamic platform for sharing developer shortcuts and architectural patterns.',
-    tags: ['Architecture', 'Tech News', 'Community'],
-    image: 'https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=800',
-    link: '/tech.html',
-    gridSpan: 'md:col-span-2'
+    github: 'https://github.com/Ashutosh-JavaDev/PizzaMania/tree/main/Project/src',
+    category: 'Web App',
+    status: 'Open Source'
   },
   {
     id: 'webbrilliant',
     title: 'Web Brilliant',
-    description: 'Enterprise-grade publicly hosted web portal featuring SEO optimization and fast delivery.',
+    description: 'Enterprise-grade publicly hosted web portal featuring advanced SEO optimization, blazing fast delivery, and a professional business presence.',
     tags: ['SEO', 'Performance', 'Enterprise'],
     image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800',
     link: 'https://www.webbilliant.in/',
-    gridSpan: 'md:col-span-2'
+    liveLink: 'https://www.webbilliant.in/',
+    github: 'https://github.com/Ashutosh-JavaDev',
+    category: 'Enterprise',
+    featured: true,
+    status: 'Live'
+  },
+  {
+    id: 'techhack',
+    title: 'Tech Hack Community',
+    description: 'A dynamic developer community platform for sharing coding shortcuts, architectural patterns, and engineering insights with a modern content-driven experience.',
+    tags: ['Architecture', 'Tech News', 'Community'],
+    image: 'https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=800',
+    link: '/tech.html',
+    github: 'https://github.com/Ashutosh-JavaDev',
+    category: 'Community',
+    status: 'In Progress'
+  },
+  {
+    id: 'tictactoe',
+    title: 'Tic Tac Toe Pro',
+    description: 'A premium redesign of the classic game with high-fidelity UI, smooth animations, and minimax-ready AI logic for an unbeatable opponent experience.',
+    tags: ['Modern CSS', 'ES6+', 'Game Logic'],
+    image: 'https://images.pexels.com/photos/163064/play-stone-network-networked-interactive-163064.jpeg?auto=compress&cs=tinysrgb&w=800',
+    link: '/game.html',
+    github: 'https://github.com/Ashutosh-JavaDev',
+    category: 'Game',
+    status: 'Completed'
   }
 ];
 
