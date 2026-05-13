@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Variants } from "framer-motion";
 import { Github, ExternalLink, ArrowUpRight, Zap, Star } from 'lucide-react';
 import { PROJECTS } from '../constants';
 
@@ -21,10 +22,26 @@ const containerVariants = {
   },
 };
 
-const cardVariants = {
-  hidden: { opacity: 0, y: 40 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] } },
-  exit: { opacity: 0, y: -20, transition: { duration: 0.3 } },
+const cardVariants: Variants = {
+  hidden: {
+    opacity: 0,
+    y: 30,
+  },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.5,
+      ease: "easeOut",
+    },
+  },
+  exit: {
+    opacity: 0,
+    y: 20,
+    transition: {
+      duration: 0.3,
+    },
+  },
 };
 
 const Projects: React.FC = () => {
